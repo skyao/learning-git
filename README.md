@@ -1,15 +1,14 @@
 Git学习笔记
 ===========
 
-> 注: 如果你看到的是github的源代码, 请点击 [这里](http://skyao.github.io/leaning-git/) 查看html内容.
+## 介绍
 
-# 介绍
+Git是目前业界最流行的分布式版本控制工具。
 
-个人的Git学习笔记
+这份学习笔记, 记录git的基本使用和技巧.
 
-# 章节内容
+## 导航
 
-* [Git 介绍](introduction/index.md)
-    * [资料收集整理](introduction/information.md)
-* [安装](installation/index.md)
-	* [CentOS 6.5](installation/centos65.md)
+如果看到的是github的源代码, 请点击下面的链接:
+
+[git学习笔记@gitbook](https://skyao.gitbooks.io/leaning-git/)
