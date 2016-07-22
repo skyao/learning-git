@@ -4,3 +4,8 @@ bui# Summary
     * [资料收集整理](introduction/information.md)
 * [安装](installation/index.md)
 	* [CentOS 6.5](installation/centos65.md)
+* [操作命令](command/index.md)
+	* [commit/提交](command/commit/commit.md)
+		* [撤销提交](command/commit/cancel.md)
+	* [merge/合并](command/merge/merge.md)
+		* [更新github上fork的仓库](command/merge/github_fork.md)
