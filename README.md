@@ -1,14 +1,9 @@
-Git学习笔记
-===========
-
-## 介绍
+# Gitbook学习笔记
 
 Git是目前业界最流行的分布式版本控制工具。
 
 这份学习笔记, 记录git的基本使用和技巧.
 
-## 导航
+笔记发布于 gitbook，请点击下面的链接阅读:
 
-如果看到的是github的源代码, 请点击下面的链接:
-
-[git学习笔记@gitbook](https://skyao.gitbooks.io/leaning-git/)
+https://skyao.gitbooks.io/leaning-git/
