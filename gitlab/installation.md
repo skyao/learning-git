@@ -70,3 +70,18 @@ root账户第一次登录时会要求修改密码，为了安全我们在管理�
 默认注册功能是开启的, 对于个人的gitlab, 没有对外公布的必要(有就直接上github了), 因此需要考虑关闭注册功能.
 
 用管理员账号登录之后, 进入"Admin area", 点"settings", 取消"Signup enabled".
+
+
+### 配置反向代理
+
+按照上述安装方式，gitlab 服务于下面的地址：
+
+http://basiccloud.net:8800
+
+由于携带端口号，会造成输入和记忆的麻烦，因此推荐在前面加一个 nginx 做反向代理，将地址转为 http://git.basiccloud.net 这样的比较友好的形式。
+
+具体操作请见 nginx 学习笔记 中的反向代理的使用：
+
+https://skyao.gitbooks.io/leaning-nginx/
+
+
