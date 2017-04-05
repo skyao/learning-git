@@ -53,5 +53,21 @@
 ![](images/settings/repository.jpg)
 
 - Project folder: 设置默认的项目文件夹，在新建仓库/克隆仓库等操作时默认就会使用这个路径来保存新的仓库，如果不设置则windows下默认为当前用户的Documents目录。
-- Language: 修改 sourcetree 界面的语言,推荐还是用英语吧，各种术语保持一致，用中文见面还需要中文英文对应过来。
+- Language: 修改 sourcetree 界面的语言,推荐还是用英语吧，各种术语保持一致，用中文还需要中文英文对应过来。
 - Default text encoding: 默认utf-8，一定不要改
+
+## Diff 设置
+
+Diff设置中，"External Diff/Merge" 用来设置外部的diff和merge工具，默认都是"System Default"。下拉框中可以选择支持的外部的diff和merge工具，比如merge tool我设置为kdiff3了。
+
+![](images/settings/diff-1.jpg)
+
+注意选择的外部工具是需要自己另行安装的。
+
+### kdiff3
+
+先在 kdiff3 的网站下载最新版本的 kdiff3：
+
+https://sourceforge.net/projects/kdiff3/files/
+
+然后安装。
