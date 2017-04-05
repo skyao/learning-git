@@ -83,3 +83,11 @@ Kdiff 以这样的图形界面来展示文件冲突的情况：
 好消息是原来的 BASE/LOCAL/REMOTE/BACKUP 文件都被清理掉了，工作区现在干净了很多。坏消息是还是生成了一个 `*.orig`
 
 > 注: 为了避免将.orig 文件提交到git仓库，请修改 .gitignore 文件，增加一行，内容为 `*.orig`
+> 或者干脆就不生成这个备份文件:
+> git config --global mergetool.keepBackup false
+
+## commit并push
+
+完成冲突的处理之后，就可以再次commit然后push到远程仓库了，此时 sourcetree 的显示如下：
+
+![](images/external/pull-merge-done.jpg)

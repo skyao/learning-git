@@ -18,6 +18,7 @@
 	* [基本操作](sourcetree/basic-operation.md)
 	* [Pull 时冲突](sourcetree/conflict-pull.md)
 	* [外部 Merge 工具](sourcetree/external-merge-tool.md)
+	* [Merge 时冲突](sourcetree/conflict-merge.md)
 * [msysgit](msysgit/index.md)
 * [Git命令](command/index.md)
 	* [commit/提交](command/commit/commit.md)
