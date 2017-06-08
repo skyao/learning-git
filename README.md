@@ -6,4 +6,4 @@ Git是目前业界最流行的分布式版本控制工具。
 
 笔记发布于 gitbook，请点击下面的链接阅读:
 
-https://skyao.gitbooks.io/leaning-git/
+https://skyao.gitbooks.io/learning-git/
