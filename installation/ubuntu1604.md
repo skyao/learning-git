@@ -14,7 +14,7 @@ sudo apt-get install git
 
 ```bash
 git --version
-git version 2.10.1
+git version 2.15.0
 ```
 
 此时 git 是在 /usr/bin/ 目录下：
