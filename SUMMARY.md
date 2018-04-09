@@ -32,4 +32,3 @@
 	* [Pull 时冲突](sourcetree/conflict-pull.md)
 	* [外部 Merge 工具](sourcetree/external-merge-tool.md)
 	* [Merge 时冲突](sourcetree/conflict-merge.md)
-* [全文标签总览](tags.md)
