@@ -83,3 +83,22 @@ git push -f --tags gitlab refs/heads/*:refs/heads/*
 
 这个方式适合导入单个仓库。
 
+## 导入非bare仓库
+
+当git clone仓库没有使用--mirror参数，也可以通过类似的方式导入。
+
+```bash
+cd existing_repo
+# 将原来的origin重命名
+git remote rename origin old-origin
+# 添加新的remote到我们要提交的仓库，请在导入前先建立好对应的group和空project
+# 可以用http提交，但是要输入密码
+# git remote add origin http://server.skyao.io:8800/backup/a.git
+# 用ssh提交就可以不用输入密码，比较方便
+git remote add origin git@server.skyao.io:backup/a.git
+
+# push资料上去
+git push -u origin --all
+git push -u origin --tags
+```
+
