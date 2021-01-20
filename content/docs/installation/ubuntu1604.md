@@ -1,4 +1,11 @@
-# Ubuntu 16.04
+---
+title: "Ubuntu安装"
+date: 2021-01-20
+weight: 210
+description: >
+  在Ubuntu 16.04上安装Git
+---
+
 
 ## 安装
 

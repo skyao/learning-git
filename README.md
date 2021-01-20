@@ -1,22 +1,17 @@
 # Git学习笔记
 
+### 内容介绍
+
 Git是目前业界最流行的分布式版本控制工具。
 
-这是个人学习Git的笔记，请点击下面的链接阅读或者下载电子版本:
+### 访问方式
 
-- 在线阅读
-	- [国外服务器][gitbook]：gitbook提供的托管，服务器在国外，速度比较慢，偶尔被墙，HTTPS
-	- [国内服务器][qcloud]：腾讯云加速，国内网速极快，非HTTPS
-- [下载pdf格式][pdf]
-- [下载mobi格式][mobi]
-- [下载epub格式][epub]
+这是个人学习Git的笔记，请点击下面的链接阅读:
 
-本文内容可以任意转载，但是需要注明来源并提供链接。
+- [在线阅读](https://skyao.io/learning-git/)：hugo格式，界面清爽。托管于腾讯云香港节点，速度快，偶尔抽风
+- [@github](https://github.com/skyao/learning-git/)：源码托管于github，如有谬误或需讨论，请提issue，欢迎提交PR
 
-**请勿用于商业出版**。
+### 版权申明
 
-[gitbook]: https://skyao.gitbooks.io/learning-git/
-[qcloud]: http://skyao.io/learning-git/
-[pdf]: https://www.gitbook.com/download/pdf/book/skyao/learning-git
-[mobi]: https://www.gitbook.com/download/mobi/book/skyao/learning-git
-[epub]: https://www.gitbook.com/download/epub/book/skyao/learning-git
+本笔记内容可以任意转载，但请注明来源并提供链接，**请勿用于商业出版**。
+

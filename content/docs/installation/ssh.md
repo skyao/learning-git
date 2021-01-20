@@ -1,4 +1,10 @@
-# 配置ssh
+---
+title: "配置ssh"
+date: 2021-01-20
+weight: 230
+description: >
+  配置git以通过ssh的方式访问git仓库
+---
 
 为了方便日常使用，推荐采用ssh的方式来clone git仓库。
 
