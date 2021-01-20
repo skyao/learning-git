@@ -64,6 +64,12 @@ To git@github.com:skyao/jetcd.git
 
 push 命令执行完成，远程仓库也就重置了。此时从远程仓库上看，在这次 `6899dd19dbe58da6ae65fd157a791151967c16b2` 提交之后的所有commit已经消失，相当于 git 仓库回滚到这个提交了。
 
+如果不是master branch，则需要在HEAD后面指定远程分支的名字，如：
+
+```bash
+git push origin HEAD:learning --force
+```
+
 ### 处理受保护分支
 
 如果当前分支是 protecded 的受保护分支，则 git 服务器会拒绝强制推送，报错如下：
