@@ -1,7 +1,3 @@
 .*
 !.gitignore
-_book
-node_modules
-assets/images/uml/*/*.uml
-assets/images/uml/*/*.uml.sum
 
