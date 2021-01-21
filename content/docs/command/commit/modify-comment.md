@@ -1,4 +1,11 @@
-# 修改注释
+---
+title: "修改注释"
+linkTitle: "修改注释"
+weight: 321
+date: 2021-01-20
+description: >
+  在commit之后修改注释
+---
 
 ## 已经 commit 但还没有 push
 
@@ -36,7 +43,7 @@ Successfully rebased and updated refs/heads/oss.
 git push --force
 ```
 
-### 参考资料
+## 参考资料
 
 - http://www.cnblogs.com/dudu/p/4705247.html
 - https://help.github.com/articles/changing-a-commit-message/

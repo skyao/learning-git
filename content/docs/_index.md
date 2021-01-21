@@ -6,7 +6,6 @@ weight: 1
 date: 2021-01-20
 menu:
   main:
-
     weight: 20
 ---
 

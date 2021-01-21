@@ -1,4 +1,11 @@
-# 更新github上fork的仓库
+---
+title: "更新fork仓库"
+linkTitle: "更新fork仓库"
+weight: 331
+date: 2021-01-20
+description: >
+  更新github上fork的仓库
+---
 
 ## 背景
 
@@ -25,27 +32,27 @@
 
 	```bash
 	git remote add --track master upstream git://github.com/netty/netty.git
-    ```
+   ```
 
 2. fetch 这个upstream远程的所有分支到remote-tracking分支, 例如upstream/master
 
 	```bash
 	git fetch upstream
-    ```
+   ```
 
 3. 确认当前分支是master分支, 如果不是checkout到master分支
 
 	```bash
 	git branch
 	git checkout master
-    ```
+   ```
 
 4. 同步upstream的修改到本地, 可以选择rebase或者merge
 
 	```bash
 	git rebase upstream/master
 	git merge upstream/master
-    ```
+   ```
 
 	注: 推荐用merge.
 
@@ -53,7 +60,7 @@
 
 	```bash
 	git push -f origin master
-    ```
+   ```
 
 ## 参考资料
 

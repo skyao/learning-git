@@ -1,4 +1,11 @@
-# 撤销commit
+---
+title: "撤销commit"
+linkTitle: "撤销commit"
+weight: 322
+date: 2021-01-20
+description: >
+  在commit之后撤销已经提交的commit
+---
 
 ## 背景
 
