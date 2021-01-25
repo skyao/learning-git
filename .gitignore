@@ -3,5 +3,6 @@
 public/
 resources/
 node_modules/
-tech-doc-hugo
+node_modules
 themes/
+init_docsy.sh
