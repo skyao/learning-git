@@ -112,7 +112,7 @@ github_project_repo = "https://github.com/skyao/learning-git"
 # github_subdir = ""
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "8f763efbce07435e9"
+gcs_engine_id = "a14955616c505e3d3"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
