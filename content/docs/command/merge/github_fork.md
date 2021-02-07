@@ -25,13 +25,15 @@ description: >
 1. 为本地仓库增加一个remote, 命名为"upstream":
 
 	```bash
-	git remote add upstream git://github.com/netty/netty.git
+	git remote add upstream git://github.com/dapr/dapr.git
+	# 或者
+	git remote add upstream git@github.com:dapr/dapr.git
 	```
 
 	也有人推荐下面的多了--track参数的的方式:
 
 	```bash
-	git remote add --track master upstream git://github.com/netty/netty.git
+	git remote add --track master upstream git://github.com/dapr/dapr.git
    ```
 
 2. fetch 这个upstream远程的所有分支到remote-tracking分支, 例如upstream/master
