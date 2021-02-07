@@ -3,9 +3,13 @@ title: "Ubuntu安装"
 date: 2021-01-20
 weight: 210
 description: >
-  在Ubuntu 16.04上安装Git
+  在Ubuntu上安装Git
 ---
 
+以下ubuntu版本都验证OK：
+
+- 16.04
+- 20.04
 
 ## 安装
 
@@ -21,7 +25,7 @@ sudo apt-get install git
 
 ```bash
 git --version
-git version 2.15.0
+git version 2.30.0
 ```
 
 此时 git 是在 /usr/bin/ 目录下：
