@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu安装"
 date: 2021-01-20
-weight: 210
+weight: 10
 description: >
   在Ubuntu上安装Git
 ---

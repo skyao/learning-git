@@ -1,7 +1,7 @@
 ---
 title: "MacOS安装"
 date: 2021-01-20
-weight: 220
+weight: 20
 description: >
   在MacOS上安装Git
 ---

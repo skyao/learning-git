@@ -1,7 +1,7 @@
 ---
 title: "windows安装"
 date: 2021-01-20
-weight: 230
+weight: 30
 description: >
   在windows上安装Git
 ---

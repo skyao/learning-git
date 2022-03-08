@@ -1,7 +1,7 @@
 ---
 title: "配置ssh"
 date: 2021-01-20
-weight: 230
+weight: 120
 description: >
   配置git以通过ssh的方式访问git仓库
 ---
