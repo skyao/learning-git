@@ -15,6 +15,8 @@ description: >
 
 ## 操作过程
 
+### 同步代码
+
 以netty为例：
 
 - 源地址：git@github.com:netty/netty.git
@@ -63,6 +65,14 @@ description: >
 	```bash
 	git push -f origin master
    ```
+
+### 同步tag
+
+```bash
+git fetch upstream --tags
+
+git push --tags
+```
 
 ## 参考资料
 
