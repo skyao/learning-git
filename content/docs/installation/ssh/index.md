@@ -36,9 +36,6 @@ id_rsa.pub 是 ssh 的公钥，后面配置时要提交的公钥的内容就在�
 配置完成之后，尝试以ssh方式执行git clone 命令：
 
 ```bash
-git clone git@github.com:basiccloud/basiccloud-site.git
+git clone git@github.com:skyao/learning-git.git
 ```
 
-## gitlab 配置
-
-登录gitlab之后，在当前用户的 "Profile Settings" -> "SSH Keys" 中，提交id_rsa.pub 中公钥的内容。

@@ -6,6 +6,7 @@ description: >
   配置git代理以加速访问
 ---
 
+### linux 配置
 
 
 `vi ~/.ssh/config`  打开文件（如果不存在则新建文件），内容如下：
@@ -18,8 +19,19 @@ Host github.com
 HostName github.com
 User git
 # 如果是 HTTP 代理，把下面这行取消注释，并把 proxyport 改成自己的 http 代理的端>口
-#ProxyCommand socat - PROXY:127.0.0.1:%h:%p,proxyport=3333
+#ProxyCommand socat - PROXY:192.168.2.1:%h:%p,proxyport=7890
 # 如果是 socks5 代理，则把下面这行取消注释，并把 6666 改成自己 socks5 代理的端口
-ProxyCommand nc -v -x 192.168.0.1:23456 %h %p
+ProxyCommand nc -v -x 192.168.2.1:7891 %h %p
 ```
 
+### windows 配置
+
+在 windows 下的 gitbash 中，由于没有 nc 命令，因此上面的命令会失败。需要替换为 connect 命令：
+
+```bash
+Host github.com
+HostName github.com
+User git
+#ProxyCommand socat - PROXY:192.168.2.1:%h:%p,proxyport=7890
+ProxyCommand connect -S 192.168.2.1:7891 %h %p
+```
