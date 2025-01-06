@@ -12,16 +12,20 @@ description: >
 `vi ~/.ssh/config`  打开文件（如果不存在则新建文件），内容如下：
 
 ```bash
-# 这里必须是 github.com，因为这个跟我们 clone 代码时的链接有关
+# for  github
 Host github.com
-    # 如果用默认端口，这里是 github.com，如果想用443端口，这里就是 ssh.github.com 详
-    # 见 https://help.github.com/articles/using-ssh-over-the-https-port/
     HostName github.com
     User git
-    # 如果是 HTTP 代理，把下面这行取消注释，并把 proxyport 改成自己的 http 代理的端>口
+    # for HTTP proxy
+    #ProxyCommand socat - PROXY:192.168.0.1:%h:%p,proxyport=7890
     #ProxyCommand socat - PROXY:192.168.2.1:%h:%p,proxyport=7890
-    # 如果是 socks5 代理，则把下面这行取消注释，并把 6666 改成自己 socks5 代理的端口
-    ProxyCommand nc -v -x 192.168.2.1:7891 %h %p
+    #ProxyCommand socat - PROXY:192.168.3.1:%h:%p,proxyport=7890
+    #ProxyCommand socat - PROXY:192.168.7.34:%h:%p,proxyport=7890
+    # for socks5 proxy on linux
+    #ProxyCommand nc -v -x 192.168.0.1:7891 %h %p
+    #ProxyCommand nc -v -x 192.168.2.1:7891 %h %p
+    #ProxyCommand nc -v -x 192.168.3.1:7891 %h %p
+    #ProxyCommand nc -v -x 192.168.7.34:7891 %h %p
     PreferredAuthentications publickey
     IdentityFile ~/.ssh/id_rsa_github
 ```
@@ -31,7 +35,29 @@ Host github.com
 在 windows 下的 gitbash 中，由于没有 nc 命令，因此上面的命令会失败。需要替换为 connect 命令：
 
 ```bash
-    ......
+# for  github
+Host github.com
+    HostName github.com
+    User git
+    # for HTTP proxy
+    #ProxyCommand socat - PROXY:192.168.0.1:%h:%p,proxyport=7890
     #ProxyCommand socat - PROXY:192.168.2.1:%h:%p,proxyport=7890
-    ProxyCommand connect -S 192.168.2.1:7891 %h %p
+    #ProxyCommand socat - PROXY:192.168.3.1:%h:%p,proxyport=7890
+    #ProxyCommand socat - PROXY:192.168.7.34:%h:%p,proxyport=7890
+    # for socks5 proxy on windows
+    #ProxyCommand connect -S 192.168.0.1:7891 %h %p
+    #ProxyCommand connect -S 192.168.2.1:7891 %h %p
+    #ProxyCommand connect -S 192.168.3.1:7891 %h %p
+    #ProxyCommand connect -S 192.168.7.34:7891 %h %p
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_github
+
+# for xxxxxx company
+Host xxxxxx.com
+    HostName xxxxxx.com
+    User git
+    Port xxxx
+    ProxyCommand socat - PROXY:proxy.xxxxxx.com:%h:%p,proxyport=xxxx
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_ed25519
 ```

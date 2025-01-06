@@ -63,7 +63,7 @@ git config --global user.email "aoxiaojian@gmail.com"
 
 ```bash
 git config user.name "aoxiaojian"
-git config user.email "aoxiaojian@hotmail.com"
+git config user.email "aoxiaojian@gmail.com"
 ```
 
 通过可以通过命令 `git config --list` 进行查看，配置内容同样存放在文件  `~/.gitconfig` 中。
